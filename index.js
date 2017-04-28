@@ -6,7 +6,9 @@ const STYLE_LOADER = require.resolve("style-loader")
 
 module.exports = neutrino => {
   const options = neutrino.options.config
-  const sassOptions = {}
+  const sassOptions = {
+    sourceMap: true
+  }
 
   // If modules are present in the neutrino config,
   // set them as include paths.
@@ -22,6 +24,11 @@ module.exports = neutrino => {
       .end()
     .use("css")
       .loader(CSS_LOADER)
+      .options({
+        modules: true,
+        sourceMap: true,
+        localIdentName: "[local]---[hash:base64:5]"
+      })
       .end()
     .use("sass")
       .loader(SASS_LOADER)
