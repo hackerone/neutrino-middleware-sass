@@ -1,5 +1,5 @@
 {
-  "name": "@izettle/neutrino-preset-sass",
+  "name": "@izettle/neutrino-middleware-sass",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",

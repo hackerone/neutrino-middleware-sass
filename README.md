@@ -1,4 +1,4 @@
-# neutrino-preset-sass
+# neutrino-middleware-sass
 
 Use SASS/SCSS with [neutrino](https://neutrino.js.org).
 
